@@ -1,0 +1,348 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Microchip_ATmega:ATmega32L-8PU U?
+U 1 1 6141BE67
+P 3100 4600
+F 0 "U?" H 3100 2511 50  0000 C CNN
+F 1 "ATmega32L-8PU" H 3100 2420 50  0000 C CNN
+F 2 "Package_DIP:DIP-40_W15.24mm" H 3100 4600 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/doc2503.pdf" H 3100 4600 50  0001 C CNN
+	1    3100 4600
+	1    0    0    -1  
+$EndComp
+Text GLabel 3100 2500 1    50   Input ~ 0
+5V
+Wire Wire Line
+	3100 2500 3100 2600
+$Comp
+L Connector:Conn_01x03_Female J?
+U 1 1 6142E78B
+P 7900 5050
+F 0 "J?" H 7928 5076 50  0000 L CNN
+F 1 "Conn_01x03_Female" H 7928 4985 50  0000 L CNN
+F 2 "" H 7900 5050 50  0001 C CNN
+F 3 "~" H 7900 5050 50  0001 C CNN
+	1    7900 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Female J?
+U 1 1 61430D79
+P 7900 5700
+F 0 "J?" H 7928 5726 50  0000 L CNN
+F 1 "Conn_01x03_Female" H 7928 5635 50  0000 L CNN
+F 2 "" H 7900 5700 50  0001 C CNN
+F 3 "~" H 7900 5700 50  0001 C CNN
+	1    7900 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small D?
+U 1 1 6143118A
+P 4600 2350
+F 0 "D?" H 4600 2585 50  0000 C CNN
+F 1 "LED_Small" H 4600 2494 50  0000 C CNN
+F 2 "" V 4600 2350 50  0001 C CNN
+F 3 "~" V 4600 2350 50  0001 C CNN
+	1    4600 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small D?
+U 1 1 614330E0
+P 4600 2500
+F 0 "D?" H 4250 2550 50  0000 C CNN
+F 1 "LED_Small" H 4300 2450 50  0000 C CNN
+F 2 "" V 4600 2500 50  0001 C CNN
+F 3 "~" V 4600 2500 50  0001 C CNN
+	1    4600 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small D?
+U 1 1 61433455
+P 4600 2650
+F 0 "D?" H 4600 2450 50  0000 C CNN
+F 1 "LED_Small" H 4600 2550 50  0000 C CNN
+F 2 "" V 4600 2650 50  0001 C CNN
+F 3 "~" V 4600 2650 50  0001 C CNN
+	1    4600 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Display_Character:HDSP-7501 U?
+U 1 1 614357C2
+P 6800 1650
+F 0 "U?" H 6800 2317 50  0000 C CNN
+F 1 "HDSP-7501" H 6800 2226 50  0000 C CNN
+F 2 "Display_7Segment:HDSP-A151" H 6800 1100 50  0001 C CNN
+F 3 "https://docs.broadcom.com/docs/AV02-2553EN" H 6300 2200 50  0001 C CNN
+	1    6800 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Display_Character:HDSP-7501 U?
+U 1 1 61437F9B
+P 9300 1650
+F 0 "U?" H 9300 2317 50  0000 C CNN
+F 1 "HDSP-7501" H 9300 2226 50  0000 C CNN
+F 2 "Display_7Segment:HDSP-A151" H 9300 1100 50  0001 C CNN
+F 3 "https://docs.broadcom.com/docs/AV02-2553EN" H 8800 2200 50  0001 C CNN
+	1    9300 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS47 U?
+U 1 1 61438F8A
+P 5600 1650
+F 0 "U?" H 5600 2431 50  0000 C CNN
+F 1 "74LS47" H 5600 2340 50  0000 C CNN
+F 2 "" H 5600 1650 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS47" H 5600 1650 50  0001 C CNN
+	1    5600 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS47 U?
+U 1 1 6143BAE0
+P 8100 1650
+F 0 "U?" H 8100 2431 50  0000 C CNN
+F 1 "74LS47" H 8100 2340 50  0000 C CNN
+F 2 "" H 8100 1650 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS47" H 8100 1650 50  0001 C CNN
+	1    8100 1650
+	1    0    0    -1  
+$EndComp
+Text GLabel 5550 1000 1    50   Input ~ 0
+5V
+Text GLabel 8100 950  1    50   Input ~ 0
+5V
+Wire Wire Line
+	5550 1000 5550 1050
+Wire Wire Line
+	8100 950  8100 1050
+$Comp
+L Device:R R?
+U 1 1 614437C0
+P 6300 1350
+F 0 "R?" V 6093 1350 50  0000 C CNN
+F 1 "R" V 6184 1350 50  0000 C CNN
+F 2 "" V 6230 1350 50  0001 C CNN
+F 3 "~" H 6300 1350 50  0001 C CNN
+	1    6300 1350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61444AD6
+P 6300 1450
+F 0 "R?" V 6093 1450 50  0000 C CNN
+F 1 "R" V 6184 1450 50  0000 C CNN
+F 2 "" V 6230 1450 50  0001 C CNN
+F 3 "~" H 6300 1450 50  0001 C CNN
+	1    6300 1450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61444F9E
+P 6300 1550
+F 0 "R?" V 6093 1550 50  0000 C CNN
+F 1 "R" V 6184 1550 50  0000 C CNN
+F 2 "" V 6230 1550 50  0001 C CNN
+F 3 "~" H 6300 1550 50  0001 C CNN
+	1    6300 1550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61444FA4
+P 6300 1650
+F 0 "R?" V 6093 1650 50  0000 C CNN
+F 1 "R" V 6184 1650 50  0000 C CNN
+F 2 "" V 6230 1650 50  0001 C CNN
+F 3 "~" H 6300 1650 50  0001 C CNN
+	1    6300 1650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 614452BC
+P 6300 1750
+F 0 "R?" V 6093 1750 50  0000 C CNN
+F 1 "R" V 6184 1750 50  0000 C CNN
+F 2 "" V 6230 1750 50  0001 C CNN
+F 3 "~" H 6300 1750 50  0001 C CNN
+	1    6300 1750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 614452C2
+P 6300 1850
+F 0 "R?" V 6093 1850 50  0000 C CNN
+F 1 "R" V 6184 1850 50  0000 C CNN
+F 2 "" V 6230 1850 50  0001 C CNN
+F 3 "~" H 6300 1850 50  0001 C CNN
+	1    6300 1850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61445832
+P 6300 1950
+F 0 "R?" V 6093 1950 50  0000 C CNN
+F 1 "R" V 6184 1950 50  0000 C CNN
+F 2 "" V 6230 1950 50  0001 C CNN
+F 3 "~" H 6300 1950 50  0001 C CNN
+	1    6300 1950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61445838
+P 8800 1350
+F 0 "R?" V 8593 1350 50  0000 C CNN
+F 1 "R" V 8684 1350 50  0000 C CNN
+F 2 "" V 8730 1350 50  0001 C CNN
+F 3 "~" H 8800 1350 50  0001 C CNN
+	1    8800 1350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6144A381
+P 8800 1450
+F 0 "R?" V 8593 1450 50  0000 C CNN
+F 1 "R" V 8684 1450 50  0000 C CNN
+F 2 "" V 8730 1450 50  0001 C CNN
+F 3 "~" H 8800 1450 50  0001 C CNN
+	1    8800 1450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6144A387
+P 8800 1550
+F 0 "R?" V 8593 1550 50  0000 C CNN
+F 1 "R" V 8684 1550 50  0000 C CNN
+F 2 "" V 8730 1550 50  0001 C CNN
+F 3 "~" H 8800 1550 50  0001 C CNN
+	1    8800 1550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6144A38D
+P 8800 1650
+F 0 "R?" V 8593 1650 50  0000 C CNN
+F 1 "R" V 8684 1650 50  0000 C CNN
+F 2 "" V 8730 1650 50  0001 C CNN
+F 3 "~" H 8800 1650 50  0001 C CNN
+	1    8800 1650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6144A393
+P 8800 1750
+F 0 "R?" V 8593 1750 50  0000 C CNN
+F 1 "R" V 8684 1750 50  0000 C CNN
+F 2 "" V 8730 1750 50  0001 C CNN
+F 3 "~" H 8800 1750 50  0001 C CNN
+	1    8800 1750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6144A399
+P 8800 1850
+F 0 "R?" V 8593 1850 50  0000 C CNN
+F 1 "R" V 8684 1850 50  0000 C CNN
+F 2 "" V 8730 1850 50  0001 C CNN
+F 3 "~" H 8800 1850 50  0001 C CNN
+	1    8800 1850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6144A39F
+P 8800 1950
+F 0 "R?" V 8593 1950 50  0000 C CNN
+F 1 "R" V 8684 1950 50  0000 C CNN
+F 2 "" V 8730 1950 50  0001 C CNN
+F 3 "~" H 8800 1950 50  0001 C CNN
+	1    8800 1950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6100 1350 6150 1350
+Wire Wire Line
+	6100 1450 6150 1450
+Wire Wire Line
+	6100 1550 6150 1550
+Wire Wire Line
+	6100 1650 6150 1650
+Wire Wire Line
+	6150 1750 6100 1750
+Wire Wire Line
+	6100 1850 6150 1850
+Wire Wire Line
+	6150 1950 6100 1950
+Wire Wire Line
+	6450 1950 6500 1950
+Wire Wire Line
+	6450 1850 6500 1850
+Wire Wire Line
+	6450 1750 6500 1750
+Wire Wire Line
+	6500 1650 6450 1650
+Wire Wire Line
+	6450 1550 6500 1550
+Wire Wire Line
+	6500 1450 6450 1450
+Wire Wire Line
+	6450 1350 6500 1350
+Wire Wire Line
+	8650 1350 8600 1350
+Wire Wire Line
+	8600 1450 8650 1450
+Wire Wire Line
+	8600 1550 8650 1550
+Wire Wire Line
+	8650 1650 8600 1650
+Wire Wire Line
+	8600 1750 8650 1750
+Wire Wire Line
+	8650 1850 8600 1850
+Wire Wire Line
+	8650 1950 8600 1950
+Wire Wire Line
+	8950 1350 9000 1350
+Wire Wire Line
+	8950 1450 9000 1450
+Wire Wire Line
+	8950 1550 9000 1550
+Wire Wire Line
+	8950 1650 9000 1650
+Wire Wire Line
+	8950 1750 9000 1750
+Wire Wire Line
+	8950 1850 9000 1850
+Wire Wire Line
+	8950 1950 9000 1950
+$EndSCHEMATC

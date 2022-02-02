@@ -1,0 +1,80 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:+5V #PWR0101
+U 1 1 6122AEC8
+P 1400 1400
+F 0 "#PWR0101" H 1400 1250 50  0001 C CNN
+F 1 "+5V" H 1415 1573 50  0000 C CNN
+F 2 "" H 1400 1400 50  0001 C CNN
+F 3 "" H 1400 1400 50  0001 C CNN
+	1    1400 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 6122B489
+P 1700 1500
+F 0 "R1" V 1493 1500 50  0000 C CNN
+F 1 "330" V 1584 1500 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal" V 1630 1500 50  0001 C CNN
+F 3 "~" H 1700 1500 50  0001 C CNN
+	1    1700 1500
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 6122D8D4
+P 2600 1950
+F 0 "#PWR0102" H 2600 1700 50  0001 C CNN
+F 1 "GND" H 2605 1777 50  0000 C CNN
+F 2 "" H 2600 1950 50  0001 C CNN
+F 3 "" H 2600 1950 50  0001 C CNN
+	1    2600 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 1500 2050 1500
+Wire Wire Line
+	1400 1400 1400 1500
+Wire Wire Line
+	1400 1500 1550 1500
+$Comp
+L Device:LED_ARGB D1
+U 1 1 6122F05E
+P 2250 1500
+F 0 "D1" H 2250 1033 50  0000 C CNN
+F 1 "LED_ARGB" H 2250 1124 50  0000 C CNN
+F 2 "LED_SMD:LED_1206_3216Metric" H 2250 1450 50  0001 C CNN
+F 3 "~" H 2250 1450 50  0001 C CNN
+	1    2250 1500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2450 1300 2600 1300
+Wire Wire Line
+	2600 1300 2600 1500
+Wire Wire Line
+	2450 1700 2600 1700
+Connection ~ 2600 1700
+Wire Wire Line
+	2600 1700 2600 1950
+Wire Wire Line
+	2450 1500 2600 1500
+Connection ~ 2600 1500
+Wire Wire Line
+	2600 1500 2600 1700
+$EndSCHEMATC
